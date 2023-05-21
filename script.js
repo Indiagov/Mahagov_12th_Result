@@ -10,5 +10,6 @@ if (storedTotalMarks) {
   localStorage.setItem('totalMarks', totalMarks);
 }
 
-document.getElementById('totalMarks').textContent = totalMarks;
+var formattedTotalMarks = totalMarks + "/500";
+document.getElementById('totalMarks').textContent = formattedTotalMarks;
 
