@@ -1,12 +1,12 @@
 var totalMarks = localStorage.getItem('totalMarks');
 
-if (!totalMarks || totalMarks <= 285 || totalMarks > 380) {
+if (!totalMarks || totalMarks <= 380 || totalMarks > 480) {
   do {
-    totalMarks = Math.floor(Math.random() * (500 - 271 + 1)) + 271;
-  } while (totalMarks <= 285 || totalMarks > 380);
+    totalMarks = Math.floor(Math.random() * (480 - 381 + 1)) + 381;
+  } while (totalMarks <= 380 || totalMarks > 480);
   
   localStorage.setItem('totalMarks', totalMarks);
 }
 
-var formattedTotalMarks = totalMarks + "/500";
+var formattedTotalMarks = totalMarks + "/650";
 document.getElementById('totalMarks').textContent = formattedTotalMarks;
