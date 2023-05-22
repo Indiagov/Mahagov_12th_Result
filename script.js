@@ -8,5 +8,5 @@ if (!totalMarks || totalMarks <= 380 || totalMarks > 480) {
   localStorage.setItem('totalMarks', totalMarks);
 }
 
-var formattedTotalMarks = totalMarks + "/650";
+var formattedTotalMarks = totalMarks + "/600";
 document.getElementById('totalMarks').textContent = formattedTotalMarks;
