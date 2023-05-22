@@ -3,7 +3,7 @@ var totalMarks = localStorage.getItem('totalMarks');
 if (!totalMarks || totalMarks <= 380 || totalMarks > 480) {
   do {
     totalMarks = Math.floor(Math.random() * (480 - 381 + 1)) + 381;
-  } while (totalMarks <= 380 || totalMarks > 430);
+  } while (totalMarks <= 345 || totalMarks > 430);
   
   localStorage.setItem('totalMarks', totalMarks);
 }
